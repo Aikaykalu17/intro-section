@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/all.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <ul class="first__header__links">
+          <img
+            src="./images/logo.svg"
+            alt=""
+            srcset=""
+            class="header__logo"
+            aria-label="logo svg"
+          />
+          <ul class="first__dropdown">
+            <div class="first__dropdown__links">
+              <a href="#" class="first__dropdown__title"
+                >Features <i class="fas fa-caret-down"></i
+              ></a>
+              <div class="first__dropdown__content">
+                <div class="first__dropdown__content__info">
+                  <div class="todo__list">
+                    <img
+                      src="/images/icon-todo.svg"
+                      alt=""
+                      srcset=""
+                      class="hidden__img"
+                      aria-hidden="true"
+                    />
+                    <span class="todo__list__span">Todo List</span>
+                  </div>
+                  <div class="calendar">
+                    <img
+                      src="/images/icon-calendar.svg"
+                      alt=""
+                      srcset=""
+                      class="hidden__img"
+                      aria-hidden="true"
+                    />
+                    <span class="calendar__span">Calendar</span>
+                  </div>
+                  <div class="reminders">
+                    <img
+                      src="/images/icon-reminders.svg"
+                      alt=""
+                      srcset=""
+                      class="hidden__img"
+                      aria-hidden="true"
+                    />
+                    <span class="reminders__span">Reminders</span>
+                  </div>
+                  <div class="planning">
+                    <img
+                      src="/images/icon-planning.svg"
+                      alt=""
+                      srcset=""
+                      class="hidden__img"
+                      aria-hidden="true"
+                    />
+                    <span class="planning__span">Planning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="second__dropdown">
+              <li class="second__dropdown__li">
+                <a href="#" class="second__dropdown__title"
+                  >Company <i class="fas fa-caret-down"></i>
+                </a>
+              </li>
+              <div class="second__dropdown__link">
+                <div class="second__dropdown__content">
+                  <div class="second__dropdown__content__links">
+                    <a href="" class="second__dropdown__links__a">History</a>
+                    <a href="" class="second__dropdown__links__a">Our Team</a>
+                    <a href="" class="second__dropdown__links__a">Blog</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="second__dropdown__li">
+              <a href="#" class="careers__a">Careers</a>
+            </li>
+            <li class="second__dropdown__li">
+              <a href="#" class="about__a">About</a>
+            </li>
+          </ul>
+        </ul>
+        <ul class="second__header__links">
+          <li>
+            <a href="#" class="second__header__links__a login">Login</a>
+          </li>
+          <li>
+            <a href="#" class="second__header__links__a register">Register</a>
+          </li>
+        </ul>
+        <div class="toggle" id="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="overlay" id="overlay">
+          <nav class="overlay__nav">
+            <ul class="overlay__ul">
+              
+              <li class="first__overlay__li overlay__all">
+                <a href="" class="overlay__features"> Features <i class="fas fa-caret-down fass__feature"></i></a>
+                <div class="first__overlay__div">
+                    <div class="overlay__todo__list">
+                      <img
+                        src="/images/icon-todo.svg"
+                        alt=""
+                        srcset=""
+                        class="overlay__hidden__img"
+                        aria-hidden="true"
+                      />
+                      <span class="overlay__todo__list__span">Todo List</span>
+                    </div>
+                    <div class="overlay__calendar">
+                      <img
+                        src="/images/icon-calendar.svg"
+                srcset=""
+                        class="overlay__hidden__img"
+                        aria-hidden="true"
+                      />
+                      <span class="overlay__calendar__span">Calendar</span>
+                    </div>
+                    <div class="overlay__reminders">
+                      <img
+                        src="/images/icon-reminders.svg"
+                        alt=""
+                        srcset=""
+                        class="overlay__hidden__img"
+                        aria-hidden="true"
+                      />
+                      <span class="overlay__reminders__span">Reminders</span>
+                    </div>
+                    <div class="overlay__planning">
+                               
+                       <img
+                        src="/images/icon-planning.svg"
+                        alt=""
+                        srcset=""
+                        class="overlay__hidden__img"
+                        aria-hidden="true"
+                      />
+                      <span class="overlay__planning__span">Planning</span>
+                    </div>
+                  
+                
+                </div>
+              </li>
+              <li class="second__overlay">
+                <div class="second__overlay__div overlay__all">
+                  <a href="#" class="overlay__dropdown__title"
+                    >Company <i class="fas fa-caret-down overlay__fas"></i>
+                  </a>
+                  <div class="second__overlay__content__links">
+                    <a href="" class="overlay__dropdown__links__a">History</a>
+                    <a href="" class="overlay__dropdown__links__a">Our Team</a>
+                    <a href="" class="overlay__dropdown__links__a">Blog</a>
+                  </div>
+                </div>
+              </li>
+              <div class="third__fourth__div">
+              <li class="third__overlay">
+                <a href="" class="overlay__careers">Careers</a>
+              </li>
+              <li class="fourth__overlay">
+                <a href="" class="overlay__about">About</a>
+              </li>
+              </div>
+              <div class="buttons">
+              
+                <button class="overlay__btn">Login</button>
+              
+              
+                <button class="overlay__btn__register">Register</button>
+              
+              </div>
+            </ul>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="landing">
+        <div class="landing__details">
+          <h1 class="landing__h1">
+            Make <br />
+            remote work
+          </h1>
+          <p class="landing__p">
+            Get your team in sync, no matter your location. <br />
+            Streamline processes, create team rituals, and <br />
+            watch productivity soar.
+          </p>
+          <a href="" class="landing__a">Learn more</a>
+
+          <div class="landing__svgs">
+            <img
+              src="/images/client-databiz.svg"
+              alt=""
+              srcset=""
+              aria-label="client-databiz svg"
+              class="landing__svg"
+              aria-hidden="true"
+            />
+            <img
+              src="/images/client-audiophile.svg"
+              aria-label="client-audiophile svg"
+              alt=""
+              srcset=""
+              class="landing__svg"
+              aria-hidden="true"
+            />
+            <img
+              src="/images/client-meet.svg"
+              aria-label="client-meet svg"
+              alt=""
+              srcset=""
+              class="landing__svg"
+              aria-hidden="true"
+            />
+            <img
+              src="/images/client-maker.svg"
+              aria-label="client-maker"
+              alt=""
+              srcset=""
+              class="landing__svg"
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+        <div class="landing__img__div">
+          <picture class="picture">
+            <source
+              srcset="/images/image-hero-mobile.png"
+              media="(max-width:765px)"
+              alt=""
+            />
+            <img
+              src="/images/image-hero-desktop.png"
+              alt=""
+              srcset=""
+              class="landing__img"
+              aria-hidden="true"
+            />
+          </picture>
+        </div>
+      </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >
+        Coded by
+        <a href="https://www.github.com/Aikaykalu17">Aikay Kalu Amogu</a>
+      </div>
+    </main>
+  </body>
+</html>
